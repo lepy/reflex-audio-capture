@@ -2,13 +2,15 @@
 
 from __future__ import annotations
 
+from dataclasses import dataclass
 from typing import List, cast
 
 import reflex as rx
 from jinja2 import Environment
 
 
-class MediaDeviceInfo(rx.Base):
+@dataclass
+class MediaDeviceInfo:
     """A media device info object."""
 
     kind: str
