@@ -7,13 +7,20 @@ name = "reflex-audio-capture"
 description = "Experimental audio-recorder-polyfill component"
 readme = "README.md"
 license = { text = "Apache-2.0" }
-requires-python = ">=3.8"
+requires-python = ">=3.11"
 authors = [{ name = "Masen Furer", email = "m_github@0x26.net" }]
 keywords = ["reflex","reflex-custom-components"]
 
-dependencies = ["reflex>=0.6.6"]
+dependencies = ["reflex>=0.6.6", "jinja2>=3.1"]
 
-classifiers = ["Development Status :: 4 - Beta"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Framework :: Reflex",
+    "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: Multimedia :: Sound/Audio :: Capture/Recording",
+]
 
 dynamic = ["version"]
 
@@ -27,7 +34,7 @@ dev = ["build", "twine"]
 where = ["custom_components"]
 
 [tool.ruff]
-target-version = "py310"
+target-version = "py311"
 output-format = "concise"
 lint.isort.split-on-trailing-comma = false
 lint.select = ["B", "C4", "E", "ERA", "F", "FURB", "I", "N", "PERF", "PTH", "RUF", "SIM", "T", "TRY", "W"]

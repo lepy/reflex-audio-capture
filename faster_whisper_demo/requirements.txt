@@ -1,5 +1,4 @@
 reflex>=0.6.6
 reflex-audio-capture
-reflex-intersection-observer
-openai
+jinja2>=3.1
 faster-whisper

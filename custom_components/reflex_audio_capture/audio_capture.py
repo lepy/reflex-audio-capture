@@ -125,7 +125,7 @@ def _on_data_available_signature(data: rx.Var[str]) -> tuple[rx.Var[str]]:
     return (data,)
 
 
-def _on_error_signature(error: rx.Var[dict]) -> tuple[rx.Var[dict]]:
+def _on_error_signature(error: rx.Var[str]) -> tuple[rx.Var[str]]:
     return (error,)
 
 
